@@ -3,8 +3,8 @@ from itertools import cycle
 import traceback
 from lxml.html import fromstring
 def proproxies():
-    def get_proxies():
-        url = 'https://free-proxy-list.net/'
+    def get_proxies():                                                                                     # Proxies sites !!!
+        url = 'https://free-proxy-list.net/'                                         # https://www.sslproxies.org/    &&   https://free-proxy-list.net/ !!!    
         response = requests.get(url)
         parser = fromstring(response.text)
         proxies = set()
